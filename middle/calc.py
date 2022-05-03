@@ -6,6 +6,9 @@ def 함수명(매개변수):
     처리로직2
 '''
 
+from ast import Pass
+
+
 def plus(a, b):
     res = a + b
     return res
