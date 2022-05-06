@@ -85,7 +85,7 @@ def del_contact (lst_contact, name):
 
 
 # 주소록 파일DB 저장
-def save_contact(lst_contact):
+def save_contact(lst_contact:list):
     f= open('./advanced/db_contact.txt', mode='w', encoding='utf-8')
     for contact in lst_contact:
         f.write(contact.name + '/')
@@ -96,7 +96,7 @@ def save_contact(lst_contact):
     f.close()
 
 # 주소록 파일DB 로드
-def load_contact(lst_contact):
+def load_contact(lst_contact:list):
     f= open('./advanced/db_contact.txt', mode='r', encoding='utf-8')
     while True:
         line = f.readline()
@@ -137,5 +137,5 @@ if __name__ == '__main__':
         run()
     except KeyboardInterrupt as e:
         print('Ctrl+c 종료')
-        
+
     
