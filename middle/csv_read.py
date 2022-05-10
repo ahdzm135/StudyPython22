@@ -3,7 +3,7 @@ import csv
 
 file_name = './busanbus_211231.csv'
 
-f = open(file_name, mode='r', encoding='cp949')
+f = open(file_name, mode='r', encoding='utf-8')
 reader = csv.reader(f, delimiter=',') # 구분자가 ,일경우
 
 next(reader) # 제목줄 있을 때 필요없을경우
